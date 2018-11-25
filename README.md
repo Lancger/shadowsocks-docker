@@ -105,8 +105,11 @@ Docker 使用方法
         #要删除全部image的话
         docker rmi -f $(docker images -q)
 
-
         #交互式进入容器中
         docker run -i -t centos:centos6.6 /bin/bash
+        
+        #docker-compose启动服务
+        docker-compose up -d
+
 
 
