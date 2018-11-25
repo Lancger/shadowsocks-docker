@@ -1,11 +1,10 @@
-FROM ubuntu:trusty
+FROM centos:7
 
 MAINTAINER Lancger <1151980610@qq.com>
 
-RUN apt-get update && \
-    apt-get install -y --force-yes -m python-pip python-m2crypto &&\
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
+    python get-pip.py &&\
+    pip install --upgrade pip
 
 RUN pip install shadowsocks
 
