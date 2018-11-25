@@ -23,7 +23,7 @@ Usage
 
 To create the image `guolin/shadowsocks`, execute the following command on the guolin/shadowsocks folder:
 
-        docker build -t Lancger/shadowsocks .
+        docker build -t lancger/shadowsocks:v1 .
 
 
 Running the shadowsocks server
@@ -31,7 +31,7 @@ Running the shadowsocks server
 
 Run the following command to start shadowsocks:
 
-        docker run -d -p 8838:8838 Lancger/shadowsocks
+        docker run -d -p 8838:8838 lancger/shadowsocks
 
 The first time that you run your container, a default password(password) will be set. You can get the password, check the logs of the container by running:
 
@@ -78,5 +78,5 @@ TUTUM 使用方法
 Docker 使用方法
 ------
 
-docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] Lancger/shadowsocks
+docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks
 
