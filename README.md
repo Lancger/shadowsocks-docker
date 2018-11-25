@@ -78,5 +78,5 @@ TUTUM 使用方法
 Docker 使用方法
 ------
 
-docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] guolin/shadowsocks
+docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] Lancger/shadowsocks
 
