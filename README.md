@@ -25,7 +25,7 @@ Usage
 To create the image `guolin/shadowsocks`, execute the following command on the guolin/shadowsocks folder:
 
         #构建镜像
-        docker build -t lancger/shadowsocks-docker:v1.0.0
+        docker build -t lancger/shadowsocks-docker:v1.0.0 .
 
         #登陆命令
         docker login --username=2435***@qq.com registry.cn-hangzhou.aliyuncs.com
