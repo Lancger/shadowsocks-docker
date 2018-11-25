@@ -110,6 +110,9 @@ Docker 使用方法
         
         #docker-compose启动服务
         docker-compose up -d
+        docker-compose restart
+
+        
 
 
 
