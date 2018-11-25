@@ -38,6 +38,9 @@ To create the image `guolin/shadowsocks`, execute the following command on the g
 
         #上传镜像到阿里云镜像仓库
         docker push registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1
+        
+        #使用阿里云镜像
+        docker run -d -p 8838:8838 -e SS_PASSWORD=test23 registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1
 
 Running the shadowsocks server
 --------------------------
@@ -95,6 +98,4 @@ Docker 使用方法
 
 docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks:v1
 
-#使用阿里云镜像
-docker run -d -p 8838:8838 -e SS_PASSWORD=test23 registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1
 
