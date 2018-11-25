@@ -96,6 +96,17 @@ TUTUM 使用方法
 Docker 使用方法
 ------
 
-docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks:v1
+        docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks:v1
+
+        # 删除所有容器 
+        docker rm `docker ps -a -q`
+
+
+        #要删除全部image的话
+        docker rmi -f $(docker images -q)
+
+
+        #交互式进入容器中
+        docker run -i -t centos:centos6.6 /bin/bash
 
 
