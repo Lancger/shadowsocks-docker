@@ -40,14 +40,14 @@ To create the image `guolin/shadowsocks`, execute the following command on the g
         docker push registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
         
         #使用阿里云镜像
-        docker run -d -p 8838:8838 -e SS_PASSWORD=test123 registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
+        docker run -d -p 8388:8388 -e SS_PASSWORD=test123 registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
 
 Running the shadowsocks server
 --------------------------
 
 Run the following command to start shadowsocks:
 
-        docker run -d -p 8838:8838 lancger/shadowsocks:v1.0.0
+        docker run -d -p 8388:8388 lancger/shadowsocks:v1.0.0
         
         
 
@@ -60,7 +60,7 @@ You will see an output like the following:
         ========================================================================
         You can now connect to this ShadowSocks server:"
 
-        server: 0.0.0.0  port: 8838 password: password
+        server: 0.0.0.0  port: 8388 password: password
 
         Please remember the password!!
         ========================================================================
@@ -96,7 +96,7 @@ TUTUM 使用方法
 Docker 使用方法
 ------
 
-        docker run -d -p 8838:8838 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks:v1.0.0
+        docker run -d -p 8388:8388 -e SS_PASSWORD=[替换成自己的密码] lancger/shadowsocks:v1.0.0
 
         # 删除所有容器 
         docker rm `docker ps -a -q`
