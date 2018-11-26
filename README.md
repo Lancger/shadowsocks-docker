@@ -41,7 +41,7 @@ docker tag lancger/shadowsocks-docker:v1.0.0 registry.cn-hangzhou.aliyuncs.com/l
 docker push registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
 
 #使用阿里云镜像
-docker run -d -p 8388:8388 -e SS_PASSWORD=test123 registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
+docker run -d -p 8388:8388 -e SS_PASSWORD=1Qaz2Wsx3Edc registry.cn-hangzhou.aliyuncs.com/lancger_ops/shadowsocks-docker:v1.0.0
 ```
 Running the shadowsocks server
 --------------------------
